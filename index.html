@@ -2,57 +2,32 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <title>Formulario HTML5</title>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Mi Página Personal</h1>
-    </header>
+    <h2>Formulario de Registro</h2>
 
-    <!-- Navegación -->
-    <nav>
-        <a href="#">Inicio</a> |
-        <a href="#">Contacto</a>
-    </nav>
+    <form>
 
-    <!-- Sección principal -->
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Hola, soy estudiante de Ingeniería de Sistemas y estoy aprendiendo HTML5.</p>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
-        <!-- Imagen -->
-        <h3>Imagen de ejemplo</h3>
-        <img src="https://picsum.photos/300" alt="Imagen aleatoria" width="300">
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
 
-        <!-- Tabla -->
-        <h3>Información</h3>
-        <table border="1">
-            <tr>
-                <th>Nombre</th>
-                <th>Edad</th>
-            </tr>
-            <tr>
-                <td>Juan</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>María</td>
-                <td>22</td>
-            </tr>
-            <tr>
-                <td>Carlos</td>
-                <td>25</td>
-            </tr>
-        </table>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="1" max="100" required><br><br>
 
-    </section>
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
 
-    <!-- Footer -->
-    <footer>
-        <p>Creado por: Jeronimo Larrotta Leon(192527)</p>
-    </footer>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
 
 </body>
 </html>
