@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #444;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.menu a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Galería */
+.galeria {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.imagen {
+    background-color: #d9ecff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Botones */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+```css
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ========================= */
+/* Ejercicio 1 - Menú Flexbox */
+/* ========================= */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #444;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+/* ========================= */
+/* Ejercicio 2 - Grid */
+/* ========================= */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.imagen {
+    background-color: lightblue;
+    padding: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* Ejercicio 3 - Hover */
+/* ========================= */
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* Ejercicio 4 - Responsive */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
